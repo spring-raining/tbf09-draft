@@ -106,7 +106,7 @@ theme: 'custom.css'
 theme-academic はまだ作られたばかりで、できないこともたくさんあります。以下はその一部です。
 - 独立した目次ページ
 - レポートにありがちな行数文字数指定ができない。横幅と縦幅から自分で `line-height` と `font-size` を算出する必要があります……
-- 2段組み。theme-academic-twocolumn というテーマを近日中に公開する予定です。次のスクショのように、段抜きもできるようになります
+- 2 段組み。theme-academic-twocolumn というテーマを近日中に公開する予定です。次のスクショのように、段抜きもできるようになります
     - <img width="1206" alt="image.png (932.5 kB)" src="https://img.esa.io/uploads/production/attachments/9898/2020/08/28/38623/dc546b4c-b504-44ff-8afe-608432241fc8.png">
 
 また、VFM の仕様に起因する問題もあります。

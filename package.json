@@ -8,13 +8,29 @@
     "build:copy-content": "cpx \"content/**/!(*.{md,pug})\" .vivliostyle/content",
     "build:css": "node-sass scss/app.scss dist/bundle.css -r --source-map true --output-style expanded",
     "build:pdf": "vivliostyle build",
+    "lint": "textlint ./content/**",
     "preview": "vivliostyle preview"
   },
   "dependencies": {
     "@vivliostyle/cli": "next",
     "cpx": "^1.5.0",
     "node-sass": "^4.14.1",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "textlint": "^11.7.6",
+    "textlint-rule-ja-hiragana-hojodoushi": "^1.0.4",
+    "textlint-rule-ja-no-abusage": "^2.0.1",
+    "textlint-rule-ja-no-redundant-expression": "^3.0.2",
+    "textlint-rule-ja-no-successive-word": "^1.1.1",
+    "textlint-rule-max-kanji-continuous-len": "^1.1.1",
+    "textlint-rule-max-ten": "^2.0.4",
+    "textlint-rule-no-doubled-conjunction": "^1.0.3",
+    "textlint-rule-no-doubled-conjunctive-particle-ga": "^1.1.1",
+    "textlint-rule-no-doubled-joshi": "^3.7.2",
+    "textlint-rule-no-dropping-the-ra": "^1.1.3",
+    "textlint-rule-no-mix-dearu-desumasu": "^4.0.1",
+    "textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "^1.0.1",
+    "textlint-rule-no-nfd": "^1.0.2",
+    "textlint-rule-preset-ja-spacing": "^2.0.1"
   },
   "license": "CC-BY-3.0",
   "private": true
