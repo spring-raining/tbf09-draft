@@ -1,0 +1,21 @@
+{
+  "name": "tbf09-draft",
+  "description": "tbf09-draft",
+  "version": "0.0.0",
+  "author": "spring-raining <harusamex.com@gmail.com>",
+  "scripts": {
+    "build": "run-s build:copy-content build:css build:pdf",
+    "build:copy-content": "cpx \"content/**/!(*.{md,pug})\" .vivliostyle/content",
+    "build:css": "node-sass scss/app.scss dist/bundle.css -r --source-map true --output-style expanded",
+    "build:pdf": "vivliostyle build",
+    "preview": "vivliostyle preview"
+  },
+  "dependencies": {
+    "@vivliostyle/cli": "next",
+    "cpx": "^1.5.0",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5"
+  },
+  "license": "CC-BY-3.0",
+  "private": true
+}
