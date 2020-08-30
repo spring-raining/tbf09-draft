@@ -79,6 +79,9 @@ figure {
     image-resolution: 200dpi;
   }
 }
+p > img {
+  width: 100%;
+}
 
 table {
   display: table;

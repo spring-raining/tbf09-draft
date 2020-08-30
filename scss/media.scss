@@ -102,9 +102,11 @@
     margin-top: -10mm;
   }
 
+  code[class*='language-'],
   pre[class*='language-'] {
     font-size: 90%;
-    text-overflow: ellipsis;
+    // text-overflow: ellipsis;
+    white-space: pre-wrap;
   }
 
   table {
