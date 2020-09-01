@@ -6,7 +6,6 @@ author:
 
 <!-- 
 直したい:
-- 内部リンク、見出しの自動idがvivliostyle.orgと違うので、修正が必要
 - URLの表示を見直し（とりあえず word-break: break-all にしてる↓）
 -->
 
@@ -21,7 +20,8 @@ style { display: none !important; } /* body内のstyle要素内容が表示さ�
 村上真雄
 </div>
 
-Vivliostyle 公式サイトの FAQ ページをリニューアルしました。これからもっと充実させていきたいです。そのためにも、もっとフィードバックや質問をください。　👉Vivliostyle コミュニティ <https://vivliostyle.org/ja/community/>
+Vivliostyle 公式サイトの FAQ ページをリニューアルしました。これからもっと充実させていきたいです。そのためにも、もっとフィードバックや質問をください。
+👉Vivliostyle コミュニティ <https://vivliostyle.org/ja/community/>
 
 今回更新した FAQ を掲載します。
 
@@ -30,13 +30,14 @@ Vivliostyle 公式サイトの FAQ ページをリニューアルしました。
 
 ### ローカル環境で Vivliostyle Viewer を使うには？
 
-👉 [Vivliostyle Viewer の配布パッケージの README（日本語）](https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/viewer/README.ja.md) の「配布パッケージ `vivliostyle-viewer-*.zip` を使う場合」をご覧ください。
+👉[Vivliostyle Viewer の配布パッケージの README（日本語）](https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/viewer/README.ja.md) の「配布パッケージ `vivliostyle-viewer-*.zip` を使う場合」をご覧ください。
 
 ### オンラインの Vivliostyle Viewer でローカルの文書を表示するには？
 
 まず、ローカルWebサーバーを起動して、ローカルのHTML文書にブラウザからアクセスできるようにします。ここでは、ローカルWebサーバーとして Node.js の http-server を使う方法を説明します。
 
-Node.js がインストールされていない場合はまずそのインストールをします。👉 <span class="url"><https://nodejs.org></span>
+Node.js がインストールされていない場合はまずそのインストールをします。
+👉<span class="url"><https://nodejs.org></span>
 
 ターミナル（Windows ではコマンドプロンプト）で、次のコマンドにより http-server をインストールします：
 
@@ -90,7 +91,7 @@ GitHub上に公開されているZIP解凍済みのEPUBファイルを表示す�
 
 ### 目次パネルを有効にするには？
 
-HTMLファイル内に次のような目次要素がある場合、Vivliostyle Viewer で [**Book Mode**](#Book%20Mode%20とは？) を指定することで、目次パネルが有効になります。
+HTMLファイル内に次のような目次要素がある場合、Vivliostyle Viewer で [**Book Mode**](#book-mode-とは？) を指定することで、目次パネルが有効になります。
 
 ```html
 <nav role="doc-toc">
@@ -109,7 +110,7 @@ HTMLファイル内に次のような目次要素がある場合、Vivliostyle V
 
 ### 複数のHTMLファイルを連結して組版表示するには？
 
-Vivliostyle Viewer で [**Book Mode**](#Book%20Mode%20とは？) を指定した場合、次のように別のHTMLファイルへのリンクからなる目次要素を含むHTMLファイルをロードすると、目次要素内からリンクされているHTMLファイルも連続してロードされて、それらが連結された組版表示となります：
+Vivliostyle Viewer で [**Book Mode**](#book-mode-とは？) を指定した場合、次のように別のHTMLファイルへのリンクからなる目次要素を含むHTMLファイルをロードすると、目次要素内からリンクされているHTMLファイルも連続してロードされて、それらが連結された組版表示となります：
 
 ```html
 <nav role="doc-toc">
@@ -135,8 +136,8 @@ Vivliostyle Viewer で [**Book Mode**](#Book%20Mode%20とは？) を指定した
 [Vivliostyle Viewer](https://vivliostyle.org/viewer/) のUIの **Book Mode** チェックボックスをチェック、あるいはURLパラメータに `&bookMode=true` を追加することにより Book Mode が有効になります。このモードでは、次の機能が有効になります：
 
 - [目次パネルからのナビゲーションが有効](#目次パネルを有効にするには？)
-- [複数の HTML ファイルを連結して組版表示](#複数のHTMLファイルを連結して組版表示するには？)
-- [EPUB（ZIP解凍済み）の組版表示](#EPUBを閲覧するには？)
+- [複数の HTML ファイルを連結して組版表示](#複数のhtmlファイルを連結して組版表示するには？)
+- [EPUB（ZIP解凍済み）の組版表示](#epubを閲覧するには？)
 
 ### 文字サイズを可変にするには？
 
@@ -289,7 +290,7 @@ nav li a::after {
 
 👉以下も参照:
 - [目次パネルを有効にするには？](#目次パネルを有効にするには？)
-- [複数のHTMLファイルを連結して組版表示するには？](#複数のHTMLファイルを連結して組版表示するには？)
+- [複数のHTMLファイルを連結して組版表示するには？](#複数のhtmlファイルを連結して組版表示するには？)
 
 ### 数式（MathML、TeX、AsciiMath）を埋め込むには？
 
