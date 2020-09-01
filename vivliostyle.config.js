@@ -12,6 +12,7 @@ module.exports = {
     'content/yamasy/index.md',
     'content/spring-raining/index.md',
     'content/ogwata/index.md',
+    'content/shinyu/index.md',
     'content/atogaki.html',
   ], // `entry` can be `string` or `object` if there's only single markdown file.
   // toc: true, // whether generate and include toc.html or not (does not affect manifest.json), default to `true`. if `string` given, use it as a custom toc.html.
