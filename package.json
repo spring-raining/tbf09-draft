@@ -4,9 +4,8 @@
   "version": "0.0.0",
   "author": "spring-raining <harusamex.com@gmail.com>",
   "scripts": {
-    "build": "run-s build:copy-content build:css build:pdf",
-    "build:copy-content": "cpx \"content/**/!(*.{md,pug})\" .vivliostyle/content",
-    "build:css": "node-sass scss/app.scss dist/bundle.css -r --source-map true --output-style expanded",
+    "build": "run-s build:css build:pdf",
+    "build:css": "node-sass theme/scss/app.scss theme/bundle.css -r --source-map true --output-style expanded",
     "build:pdf": "vivliostyle build",
     "lint": "textlint ./content/**",
     "preview": "vivliostyle preview"
