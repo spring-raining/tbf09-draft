@@ -34,7 +34,7 @@ Vivliostyle 公式サイトの FAQ ページをリニューアルしました。
 
 ### オンラインの Vivliostyle Viewer でローカルの文書を表示するには？
 
-まず、ローカルWebサーバーを起動して、ローカルのHTML文書にブラウザからアクセスできるようにします。ここでは、ローカルWebサーバーとして Node.js の http-server を使う方法を説明します。
+まず、ローカル Web サーバーを起動して、ローカルの HTML 文書にブラウザからアクセスできるようにします。ここでは、ローカル Web サーバーとして Node.js の http-server を使う方法を説明します。
 
 Node.js がインストールされていない場合はまずそのインストールをします。
 👉<span class="url"><https://nodejs.org></span>
@@ -45,41 +45,41 @@ Node.js がインストールされていない場合はまずそのインスト
 npm install -g http-server
 ```
 
-組版表示したいHTMLやCSSファイルが含まれるディレクトリ上で http-server を次のように起動します：
+組版表示したい HTML や CSS ファイルが含まれるディレクトリ上で http-server を次のように起動します：
 
 ```
 http-server . --cors -o -c-1
 ```
 
-これで、ローカルWebサーバーのURL <http://localhost:8080> が開き、ブラウザでローカルにあるファイルの一覧を見ることができます。そこで表示したいHTMLファイルを見つけてそのURLをコピーし、別に開いたオンラインの Vivliostyle Viewer <span class="url"><https://vivliostyle.org/viewer/></span> にそのURLを指定して組版表示することができます。 
+これで、ローカル Web サーバーの URL <http://localhost:8080> が開き、ブラウザでローカルにあるファイルの一覧を見ることができます。そこで表示したい HTML ファイルを見つけてその URL をコピーし、別に開いたオンラインの Vivliostyle Viewer <span class="url"><https://vivliostyle.org/viewer/></span> にその URL を指定して組版表示できます。 
 （http-server コマンドの `--cors` オプションは、別のドメインでのスクリプトからこのローカルサーバーの文書をアクセスできるようにする指定、`-o` オプションはブラウザを起動する指定、`-c-1` はキャッシュを無効にする指定です。）
 
 ### GitHubやGistにある文書を Vivliostyle Viewer で表示するには？
 
-[GitHub](https://github.com/) や [Gist](https://gist.github.com/) 上にあるHTML文書を [Vivliostyle Viewer](https://vivliostyle.org/viewer/) で表示することができます。
+[GitHub](https://github.com/) や [Gist](https://gist.github.com/) 上にある HTML 文書を [Vivliostyle Viewer](https://vivliostyle.org/viewer/) で表示できます。
 
-例1: GitHubリポジトリ内のHTMLファイル <span class="url"><https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html></span> を Vivliostyle Viewer で開く:
+例 1: GitHub リポジトリ内の HTML ファイル <span class="url"><https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html></span> を Vivliostyle Viewer で開く:
 <span class="url"><https://vivliostyle.org/viewer/#src=https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html></span>
 
-- GitHub上のファイルのURLをそのまま Vivliostyle Viewer に指定できます。
+- GitHub 上のファイルの URL をそのまま Vivliostyle Viewer に指定できます。
 
-例2: Gist に置かれた HTML ファイル <span class="url"><https://gist.github.com/MurakamiShinyu/4f0423fd3578a277c7d29f56a31912b7#file-index-html></span> を Vivliostyle Viewer で開く:
+例 2: Gist に置かれた HTML ファイル <span class="url"><https://gist.github.com/MurakamiShinyu/4f0423fd3578a277c7d29f56a31912b7#file-index-html></span> を Vivliostyle Viewer で開く:
 <span class="url"><https://vivliostyle.org/viewer/#src=https://gist.github.com/MurakamiShinyu/4f0423fd3578a277c7d29f56a31912b7/raw/af7fea921d57d6601d153101850bf95850262ece/index.html&bookMode=true></span>
 
-- Gist上のファイルの `Raw` コンテンツへのリンクのURLを Vivliostyle Viewer に指定できます。
-- この例では URL にパラメータとして `&bookMode=true` を指定することにより、この HTML ファイル内の目次からリンクされる複数のHTMLファイルをロードします。
+- Gist 上のファイルの `Raw` コンテンツへのリンクの URL を Vivliostyle Viewer に指定できます。
+- この例では URL にパラメータとして `&bookMode=true` を指定することにより、この HTML ファイル内の目次からリンクされる複数の HTML ファイルをロードします。
 
 ### EPUBを閲覧するには？
 
-Vivliostyle Viewer では ZIP 解凍済みの EPUB ファイルを表示することができます。この場合、次のようにパラメータを指定します:
+Vivliostyle Viewer では ZIP 解凍済みの EPUB ファイルを表示できます。この場合、次のようにパラメータを指定します:
 
 ```
 #src=⟨表示する解凍済みEPUBフォルダのURL⟩&bookMode=true
 ```
 
-GitHub上に公開されているZIP解凍済みのEPUBファイルを表示する例:
+GitHub 上に公開されている ZIP 解凍済みの EPUB ファイルを表示する例:
 
-- [IDPF/epub3-samples](https://github.com/IDPF/epub3-samples/)の 『[Accessible EPUB 3](https://github.com/IDPF/epub3-samples/tree/master/30/accessible_epub_3/)』
+- [IDPF/epub3-samples](https://github.com/IDPF/epub3-samples/)の『[Accessible EPUB 3](https://github.com/IDPF/epub3-samples/tree/master/30/accessible_epub_3/)』
 
   <span class="url"><https://vivliostyle.org/viewer/#src=https://github.com/IDPF/epub3-samples/tree/master/30/accessible_epub_3/&bookMode=true></span>
 
@@ -87,11 +87,11 @@ GitHub上に公開されているZIP解凍済みのEPUBファイルを表示す�
 
 ### Webサイトに Vivliostyle Viewer を組み込むには？
 
-[Vivliostyle Viewer の配布パッケージをダウンロード](https://vivliostyle.org/ja/download/)して解凍した内容をWebサーバー上の公開ディレクトリにコピーします。パッケージ内容の `viewer/` ディレクトリに Vivliostyle Viewer があります。例えば `https://example.com/example/` として公開されるディレクトリにパッケージ内容をコピーした場合、`https://example.com/example/viewer/` が Vivliostyle Viewer のURLになります。
+[Vivliostyle Viewer の配布パッケージをダウンロード](https://vivliostyle.org/ja/download/)して解凍した内容を Web サーバー上の公開ディレクトリにコピーします。パッケージ内容の `viewer/` ディレクトリに Vivliostyle Viewer があります。例えば `https://example.com/example/` として公開されるディレクトリにパッケージ内容をコピーした場合、`https://example.com/example/viewer/` が Vivliostyle Viewer の URL になります。
 
 ### 目次パネルを有効にするには？
 
-HTMLファイル内に次のような目次要素がある場合、Vivliostyle Viewer で [**Book Mode**](#book-mode-とは？) を指定することで、目次パネルが有効になります。
+HTML ファイル内に次のような目次要素がある場合、Vivliostyle Viewer で [**Book Mode**](#book-mode-とは？) を指定することで、目次パネルが有効になります。
 
 ```html
 <nav role="doc-toc">
@@ -110,7 +110,7 @@ HTMLファイル内に次のような目次要素がある場合、Vivliostyle V
 
 ### 複数のHTMLファイルを連結して組版表示するには？
 
-Vivliostyle Viewer で [**Book Mode**](#book-mode-とは？) を指定した場合、次のように別のHTMLファイルへのリンクからなる目次要素を含むHTMLファイルをロードすると、目次要素内からリンクされているHTMLファイルも連続してロードされて、それらが連結された組版表示となります：
+Vivliostyle Viewer で [**Book Mode**](#book-mode-とは？) を指定した場合、次のように別の HTML ファイルへのリンクからなる目次要素を含む HTML ファイルをロードすると、目次要素内からリンクされている HTML ファイルも連続してロードされて、それらが連結された組版表示となります：
 
 ```html
 <nav role="doc-toc">
@@ -133,7 +133,7 @@ Vivliostyle Viewer で [**Book Mode**](#book-mode-とは？) を指定した場�
 
 ### Book Mode とは？
 
-[Vivliostyle Viewer](https://vivliostyle.org/viewer/) のUIの **Book Mode** チェックボックスをチェック、あるいはURLパラメータに `&bookMode=true` を追加することにより Book Mode が有効になります。このモードでは、次の機能が有効になります：
+[Vivliostyle Viewer](https://vivliostyle.org/viewer/) の UI の **Book Mode** チェックボックスをチェック、あるいは URL パラメータに `&bookMode=true` を追加することにより Book Mode が有効になります。このモードでは、次の機能が有効になります：
 
 - [目次パネルからのナビゲーションが有効](#目次パネルを有効にするには？)
 - [複数の HTML ファイルを連結して組版表示](#複数のhtmlファイルを連結して組版表示するには？)
@@ -141,7 +141,7 @@ Vivliostyle Viewer で [**Book Mode**](#book-mode-とは？) を指定した場�
 
 ### 文字サイズを可変にするには？
 
-Vivliostyle Viewer のUIには `A⁻` (Text: Smaller), `A⁺` (Text: Larger), `A⁼` (Text: Default Size) のボタンがあり、表示する文字のサイズを変えることができます。しかし、文書に指定されているスタイルシートに固定の文字サイズが指定されていると、UI から文字サイズを変更できません。
+Vivliostyle Viewer の UI には `A⁻` (Text: Smaller), `A⁺` (Text: Larger), `A⁼` (Text: Default Size) のボタンがあり、表示する文字のサイズを変えることができます。しかし、文書に指定されているスタイルシートに固定の文字サイズが指定されていると、UI から文字サイズを変更できません。
 
 UI から文字サイズを変更できるようにうするには、font-size の指定に相対的な長さの単位（`%`, `em`, `rem`）を使うことです。Vivliostyle Viewer では、font-size のデフォルトは、ブラウザと同様に 12pt (= 16px) です。ルート要素で font-size を設定していない場合、`rem` (root em) 単位を使うと、そのデフォルトの font-size を 1rem として、相対的な文字サイズの指定ができます。そうすると、Vivliostyle Viewer UI からの文字サイズ変更が有効になります。
 
@@ -167,9 +167,9 @@ Vivliostyle Viewer は、スタイルシートによるページサイズの指�
 
 ### PDFの「しおり」(Bookmarks)を有効にするには？
 
-[Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) v2.1 以降では、組版する文書の目次データを使ってPDFの「しおり」(Bookmarks) を自動生成することができます。PDF の「しおり」は、Adobe Acrobat のような PDF 閲覧ソフトで目次ナビゲーションに利用できるものです。
+[Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) v2.1 以降では、組版する文書の目次データを使って PDF の「しおり」(Bookmarks) を自動生成できます。PDF の「しおり」は、Adobe Acrobat のような PDF 閲覧ソフトで目次ナビゲーションに利用できるものです。
 
-PDFの「しおり」生成を有効にするには `vivliostyle build` コマンドに `--book` オプションを指定する必要があります。
+PDF の「しおり」生成を有効にするには `vivliostyle build` コマンドに `--book` オプションを指定する必要があります。
 
 例：
 
@@ -179,9 +179,9 @@ vivliostyle build --book --size A4 --output example.pdf example.html
 
 ### EPUBをPDFに変換するには？
 
-[Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) ではZIP解凍済みのEPUBファイルからPDFを生成することができます。それには `vivliostyle build` コマンドに --book オプションを指定して、入力として解凍済みEPUBのディレクトリを指定します。
+[Vivliostyle CLI](https://www.npmjs.com/package/@vivliostyle/cli) では ZIP 解凍済みの EPUB ファイルから PDF を生成できます。それには `vivliostyle build` コマンドに --book オプションを指定して、入力として解凍済み EPUB のディレクトリを指定します。
 
-例えば、EPUBファイル `example.epub` をPDFファイル `example.pdf` に変換するには、次のように、まずEPUBファイルをZIP解凍してそれから vivliostyle を実行します：
+例えば、EPUB ファイル `example.epub` を PDF ファイル `example.pdf` に変換するには、次のように、まず EPUB ファイルを ZIP 解凍してそれから vivliostyle を実行します：
 
 ```
 unzip example.epub -d example/
@@ -190,9 +190,9 @@ vivliostyle build --book --size A4 --output example.pdf example/
 
 ### 印刷用のPDF（PDF/X-1a 形式）を生成するには？
 
-`vivliostyle build` コマンドの `--press-ready` オプションにより印刷入稿に適した PDF/X-1a 形式で出力することができます。
+`vivliostyle build` コマンドの `--press-ready` オプションにより印刷入稿に適した PDF/X-1a 形式で出力できます。
 
-この機能を使うためには [Ghostscript](https://www.ghostscript.com) と [Xpdf](https://www.xpdfreader.com/)（または [Poppler](https://poppler.freedesktop.org/)）をインストールする必要があります。主なOSでそれらをインストールする方法は以下です：
+この機能を使うためには [Ghostscript](https://www.ghostscript.com) と [Xpdf](https://www.xpdfreader.com/)（または [Poppler](https://poppler.freedesktop.org/)）をインストールする必要があります。主な OS でそれらをインストールする方法は以下です：
 
 macOS ([Homebrew](https://brew.sh/index_ja) を利用):
 ```
@@ -205,8 +205,8 @@ apt-get install poppler-utils ghostscript
 ```
 
 Windows:
-- Ghostscript for Windows を <span class="url"><https://www.ghostscript.com/download/gsdnld.html></span> からダウンロードしてインストール。それからインストールしたGhostscriptの実行ファイルのあるディレクトリ（例："C:\Program Files\gs\gs9.52\bin"）を `PATH` 環境変数に追加。
-- Xpdf command line tools for Windows を <http://www.xpdfreader.com/download.html> からダウンロードしてインストール。それからインストールしたXpdfの実行ファイルのあるディレクトリ（例："C:\xpdf-tools-win-4.02\bin64"）を `PATH` 環境変数に追加。
+- Ghostscript for Windows を <span class="url"><https://www.ghostscript.com/download/gsdnld.html></span> からダウンロードしてインストール。それからインストールした Ghostscript の実行ファイルのあるディレクトリ（例："C:\Program Files\gs\gs9.52\bin"）を `PATH` 環境変数に追加。
+- Xpdf command line tools for Windows を <http://www.xpdfreader.com/download.html> からダウンロードしてインストール。それからインストールした Xpdf の実行ファイルのあるディレクトリ（例："C:\xpdf-tools-win-4.02\bin64"）を `PATH` 環境変数に追加。
 
 ## Create Book についての FAQ
 
@@ -218,7 +218,7 @@ Windows:
 
 ### テーマをカスタマイズするには？
 
-Create Book によりインストールされたテーマパッケージは、プロジェクトフォルダ内の `node_modules` フォルダ内にインストールされます（例：テーマ「techbook」の場合 `node_modules/@vivliostyle/theme-techbook/`）。これを別のフォルダ（例えば `my-theme/` フォルダ）にコピーしてカスタマイズすることができます。
+Create Book によりインストールされたテーマパッケージは、プロジェクトフォルダ内の `node_modules` フォルダ内にインストールされます（例：テーマ「techbook」の場合 `node_modules/@vivliostyle/theme-techbook/`）。これを別のフォルダ（例えば `my-theme/` フォルダ）にコピーしてカスタマイズできます。
 
 ```
 cp -R node_modules/@vivliostyle/theme-techbook/ my-theme/
@@ -255,7 +255,7 @@ cp -R node_modules/@vivliostyle/theme-techbook/ my-theme/
 
 ### 目次を作るには？
 
-HTMLのマークアップで目次を作るには、`<nav role="doc-toc">` … `</nav>` で囲むブロック内に目次項目（本文中の各見出しへのリンク）のリストを入れます。
+HTML のマークアップで目次を作るには、`<nav role="doc-toc">` … `</nav>` で囲むブロック内に目次項目（本文中の各見出しへのリンク）のリストを入れます。
 
 参考：[W3CのPublication Manifest](https://www.w3.org/TR/pub-manifest/)仕様の付録の [Machine-Processable Table of Contents](https://www.w3.org/TR/pub-manifest/#app-toc-structure)
 
@@ -286,7 +286,7 @@ nav li a::after {
 }
 ```
 
-実例については、Vivliostyleのサンプル紹介ページ <span class="url"><https://vivliostyle.org/ja/samples/></span> の「目次」タグが付いたサンプルをご覧ください。
+実例については、Vivliostyle のサンプル紹介ページ <span class="url"><https://vivliostyle.org/ja/samples/></span> の「目次」タグが付いたサンプルをご覧ください。
 
 👉以下も参照:
 - [目次パネルを有効にするには？](#目次パネルを有効にするには？)
@@ -294,20 +294,20 @@ nav li a::after {
 
 ### 数式（MathML、TeX、AsciiMath）を埋め込むには？
 
-Vivliostyle Viewer では [MathJax](https://www.mathjax.org/) により数式を組版表示することができます。
+Vivliostyle Viewer では [MathJax](https://www.mathjax.org/) により数式を組版表示できます。
 
-次の形式の数式をHTML文書内に埋め込むことができます：
+次の形式の数式を HTML 文書内に埋め込むことができます：
 - MathML
 - TeX 数式
 - AsciiMath 
 
-MathML の要素 `<math>` … `</math>` は、HTML文書内に直接書くことができます。
+MathML の要素 `<math>` … `</math>` は、HTML 文書内に直接書くことができます。
 
-TeX または AsciiMath の数式を利用するには、その数式を含むHTML要素に属性 `data-math-typeset="true"` を指定し、テキスト内に以下の方法で数式を記述します：
+TeX または AsciiMath の数式を利用するには、その数式を含む HTML 要素に属性 `data-math-typeset="true"` を指定し、テキスト内に以下の方法で数式を記述します：
 - TeX 数式は `\(` … `\)` または `$$`…`$$` で囲む
 - AsciiMath は \` … \` で囲む
 
-数式のテストのHTMLソース: <span class="url"><https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html></span>
+数式のテストの HTML ソース: <span class="url"><https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html></span>
 
 Vivliostyle Viewer で組版表示: <span class="url"><https://vivliostyle.org/viewer/#src=https://github.com/vivliostyle/vivliostyle.js/blob/master/packages/core/test/files/math-sample.html></span>
 
