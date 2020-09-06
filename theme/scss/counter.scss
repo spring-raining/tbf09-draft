@@ -40,9 +40,9 @@ section {
   }
 }
 
-figure.fig {
+figure img.fig {
   counter-increment: fig;
-  figcaption::before {
+  & ~ figcaption::before {
     content: '図' counter(fig) ': ';
   }
 }

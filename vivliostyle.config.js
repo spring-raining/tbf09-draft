@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'tbf09-draft', // populated into `manifest.json`, default to `title` of the first entry or `name` in `package.json`.
+  title: 'Vivliostyle で本を作ろう Vol. 4', // populated into `manifest.json`, default to `title` of the first entry or `name` in `package.json`.
   author: 'spring-raining <harusamex.com@gmail.com>', // default to `author` in `package.json` or undefined.
   language: 'ja',
   size: 'JIS-B5',
