@@ -366,7 +366,10 @@ text[^n]text^[text]
 
 ##### PDF ファイルへの出力結果
 
-![出典：『あのときの王子くん』<span class="footnote">https://www.aozora.gr.jp/cards/001265/files/46817_24670.html</span> アントワーヌ・ド・サン＝テグジュペリ作、大久保ゆう訳、1943年 (一部仮名を漢字にあらためました)/CC BY 2.1 JP](./fig-i.png){.fig #fig-i}
+<figure>
+  <img src="./fig-i.png" class="fig" id="fig-i">
+  <figcaption>出典：『あのときの王子くん』<span class="footnote">https://www.aozora.gr.jp/cards/001265/files/46817_24670.html</span> アントワーヌ・ド・サン＝テグジュペリ作、大久保ゆう訳、1943年 (一部仮名を漢字にあらためました)/CC BY 2.1 JP</figcaption>
+</figure>
 
 この他にも、引用やコード、表組みなど、さまざまな表現が可能です。ぜひチュートリアルガイドや GitHub の解説ページをご参照ください。
 
