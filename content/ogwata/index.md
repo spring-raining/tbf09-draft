@@ -320,7 +320,7 @@ text[^n]text^[text]
 
 ##### PDF ファイルへの出力結果
 
-![出典：『斜陽』太宰治、1947年](./fig-h.png){.fig #fig-h}
+![出典：『斜陽』 <span class="footnote">https://www.aozora.gr.jp/cards/000035/files/1565_8559.html</span> 太宰治、1947年](./fig-h.png){.fig #fig-h}
 
 
 #### 脚注
@@ -361,7 +361,7 @@ text[^n]text^[text]
 
 ##### PDF ファイルへの出力結果
 
-![出典：『あのときの王子くん』アントワーヌ・ド・サン＝テグジュペリ作、大久保ゆう訳、1943年 (一部仮名を漢字にあらためました)/CC BY 2.1 JP](./fig-i.png){.fig #fig-i}
+![出典：『あのときの王子くん』<span class="footnote">https://www.aozora.gr.jp/cards/001265/files/46817_24670.html</span> アントワーヌ・ド・サン＝テグジュペリ作、大久保ゆう訳、1943年 (一部仮名を漢字にあらためました)/CC BY 2.1 JP](./fig-i.png){.fig #fig-i}
 
 この他にも、引用やコード、表組みなど、さまざまな表現が可能です。ぜひチュートリアルガイドや GitHub の解説ページをご参照ください。
 
@@ -400,7 +400,7 @@ text<span class="tcy">nn</span>text
 
 ##### PDF ファイルへの出力結果
 
-![出典：『アリスはふしぎの国で』ルイス・キャロル作、大久保ゆう訳、1865年/CC BY 2.1 JP](./fig-j.png){.fig #fig-j}
+![出典：『アリスはふしぎの国で』<span class="footnote">https://www.aozora.gr.jp/cards/001393/files/57320_57183.html</span> ルイス・キャロル作、大久保ゆう訳、1865年/CC BY 2.1 JP](./fig-j.png){.fig #fig-j}
 
 ## Create Book でPDFファイルを出力しよう
 
