@@ -408,7 +408,10 @@ text<span class="tcy">nn</span>text
 
 ##### PDF ファイルへの出力結果
 
-![出典：『アリスはふしぎの国で』<span class="footnote">https://www.aozora.gr.jp/cards/001393/files/57320_57183.html</span> ルイス・キャロル作、大久保ゆう訳、1865年/CC BY 2.1 JP](./fig-j.png){.fig #fig-j}
+<figure>
+  <img src="./fig-j.png" class="fig" id="fig-j">
+  <figcaption>出典：『アリスはふしぎの国で』<span class="footnote">https://www.aozora.gr.jp/cards/001393/files/57320_57183.html</span> ルイス・キャロル作、大久保ゆう訳、1865年/CC BY 2.1 JP</figcaption>
+</figure>
 
 ## Create Book でPDFファイルを出力しよう
 
