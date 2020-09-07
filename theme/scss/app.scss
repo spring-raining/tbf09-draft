@@ -23,7 +23,6 @@ section#profile {
     margin: 0 0 0 0.5em;
     & > i {
       vertical-align: -0.03em;
-      margin-right: 0.4em;
     }
   }
 
@@ -42,6 +41,12 @@ section#colophon {
   float: bottom;
   margin-bottom: 0;
 
+  @media screen {
+    & {
+      margin-top: 8rem;
+    }
+  }
+
   ul.editions {
     padding: 0;
     list-style: none;
@@ -54,6 +59,7 @@ section#colophon {
   table.info {
     margin: 0;
     width: 100%;
+    font-size: 100%;
     border-top: 2px solid currentColor;
     tr {
       border: 0;

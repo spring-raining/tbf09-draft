@@ -114,6 +114,7 @@
   }
 
   .footnote {
+    font-size: $footnote-font-size-for-print;
     float: footnote;
     text-align: left;
   }
