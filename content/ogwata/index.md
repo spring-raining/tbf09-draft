@@ -320,7 +320,12 @@ text[^n]text^[text]
 
 ##### PDF ファイルへの出力結果
 
-![出典：『斜陽』 <span class="footnote">https://www.aozora.gr.jp/cards/000035/files/1565_8559.html</span> 太宰治、1947年](./fig-h.png){.fig #fig-h}
+<figure>
+  <img src="./fig-h.png" class="fig" id="fig-h">
+  <figcaption>
+    出典：『斜陽』<span class="footnote">https://www.aozora.gr.jp/cards/000035/files/1565_8559.html</span> 太宰治、1947年
+  </figcaption>
+</figure>
 
 
 #### 脚注
